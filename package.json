@@ -1,0 +1,28 @@
+{
+  "name": "scholarship-site",
+  "version": "1.0.0",
+  "description": "A site to promote scholarships in Canada",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 startOrGracefulReload app.json",
+    "start-dev": "pm2 startOrGracefulReload app.json --env=development",
+    "stop": "pm2 stop app.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoeRoussy/scholarship-site.git"
+  },
+  "author": "Joe Roussy and Maddie Coelho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoeRoussy/scholarship-site/issues"
+  },
+  "homepage": "https://github.com/JoeRoussy/scholarship-site#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "parse-dashboard": "^1.0.25",
+    "parse-server": "^2.3.8",
+    "pm2": "^2.4.5"
+  }
+}
